@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#git submodule update --init
+git submodule update --init
 CURRENT_PATH=$(pwd)
-#ln -s $CURRENT_PATH/vimrc $HOME/.vimrc
+ln -s $CURRENT_PATH/vimrc $HOME/.vimrc
