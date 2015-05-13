@@ -104,12 +104,12 @@ augroup RelativeNumber
     autocmd WinLeave * set relativenumber!
 augroup END
 
-if filereadable('.vim/functions.vim')
-    source .vim/functions.vim
+if filereadable($HOME . '/.vim/functions.vim')
+    source $HOME/.vim/functions.vim
 endif
 
-if filereadable('.vim/plugins-settings.vim')
-    source .vim/plugins-settings.vim
+if filereadable($HOME . '/.vim/plugins-settings.vim')
+    source $HOME/.vim/plugins-settings.vim
 endif
 
 " http://www.vimninjas.com/2012/08/30/local-vimrc/
