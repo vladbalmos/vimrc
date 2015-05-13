@@ -25,6 +25,7 @@ set noswapfile
 set nobackup
 set exrc
 set secure
+set ignorecase
 set smartcase
 set scrolljump=5 " Minimal number of lines to scroll when the cursor gets off the screen.
 set scrolloff=3 " Minimal number of screen liones to keep above and below the cursor.
