@@ -9,6 +9,9 @@ let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer=1
 noremap <F7> :NERDTreeToggle<CR>:wincmd w<CR>
 
+" Tagbar
+noremap <F8> :TagbarToggle<CR>
+
 " Tagbar settings
 let g:tagbar_show_linenumbers=2
 

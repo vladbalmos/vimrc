@@ -76,7 +76,6 @@ nnoremap <leader>wk :resize -10<CR>
 " All modes mappings
 noremap - ddp
 noremap _ ddkP
-noremap <F8> :TagbarToggle<CR>
 
 " Insert mode mappings
 inoremap <C-s> <Esc>:w<CR>:a
@@ -105,12 +104,12 @@ augroup RelativeNumber
     autocmd WinLeave * set relativenumber!
 augroup END
 
-if filereadable('functions.vim')
-    source functions.vim
+if filereadable('.vim/functions.vim')
+    source .vim/functions.vim
 endif
 
-if filereadable('plugins-settings.vim')
-    source plugins-settings.vim
+if filereadable('.vim/plugins-settings.vim')
+    source .vim/plugins-settings.vim
 endif
 
 " http://www.vimninjas.com/2012/08/30/local-vimrc/
