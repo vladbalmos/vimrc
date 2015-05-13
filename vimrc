@@ -112,6 +112,10 @@ if filereadable($HOME . '/.vim/plugins-settings.vim')
     source $HOME/.vim/plugins-settings.vim
 endif
 
+if filereadable($HOME . '/.vim/work-settings.vim')
+    source $HOME/.vim/work-settings.vim
+endif
+
 " http://www.vimninjas.com/2012/08/30/local-vimrc/
 " Autoload project config file (if it exists)
 " Do we have local vimrc?
