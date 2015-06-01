@@ -124,3 +124,7 @@ if filereadable('.vimrc.local')
     " If so, go ahead and load it.
     source .vimrc.local
 endif
+
+" Papercolor Theme
+set t_Co=256
+colorscheme PaperColor
