@@ -1,3 +1,8 @@
+" LOad pathogen
+if filereadable($HOME . '/.vim/plugins-settings.vim')
+    source $HOME/.vim/plugins-settings.vim
+endif
+
 " Global settings
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
@@ -36,7 +41,7 @@ set listchars=tab:▸\
 
 " GUI settings
 if has('gui_running')
-    :set guifont=Ubuntu\ Mono\ 11
+    :set guifont=Ubuntu\ Mono\ 10
     :set guioptions-=T  "remove toolbar
     :set guioptions-=m  "remove menu bar
     :set guioptions-=l
@@ -107,10 +112,6 @@ augroup END
 
 if filereadable($HOME . '/.vim/functions.vim')
     source $HOME/.vim/functions.vim
-endif
-
-if filereadable($HOME . '/.vim/plugins-settings.vim')
-    source $HOME/.vim/plugins-settings.vim
 endif
 
 if filereadable($HOME . '/.vim/work-settings.vim')
