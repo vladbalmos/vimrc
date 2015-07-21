@@ -1,3 +1,5 @@
+let g:colorscheme_switcher_define_mappings = 0
+
 " Pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
@@ -26,3 +28,10 @@ let g:ctrlp_show_hidden = 1
 " Papercolor Theme
 set t_Co=256
 "colorscheme PaperColor
+
+" Color switcher mappings
+inoremap <silent> <F9> <C-O>:NextColorScheme<CR>
+nnoremap <silent> <F9> :NextColorScheme<CR>
+inoremap <silent> <S-F9> <C-O>:PrevColorScheme<CR>
+nnoremap <silent> <S-F9> :PrevColorScheme<CR>
+
