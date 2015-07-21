@@ -46,9 +46,9 @@ if has('gui_running')
     :set guioptions-=b
 
     " Color schme
-    colorscheme abra
+    colorscheme apprentice
 else
-    colorscheme default
+    colorscheme apprentice
 endif
 
 " Mappings

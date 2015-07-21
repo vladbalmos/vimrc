@@ -25,4 +25,4 @@ let g:ctrlp_show_hidden = 1
 
 " Papercolor Theme
 set t_Co=256
-colorscheme PaperColor
+"colorscheme PaperColor
