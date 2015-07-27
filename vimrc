@@ -78,6 +78,10 @@ nnoremap <leader>wl :vertical resize -10<CR>
 nnoremap <leader>wj :resize +10<CR>
 nnoremap <leader>wk :resize -10<CR>
 
+" Maximize / Restore split
+nnoremap <C-w>o :tabedit %<CR>
+nnoremap <C-w>d :tabclose<CR>
+
 
 " All modes mappings
 noremap - ddp
