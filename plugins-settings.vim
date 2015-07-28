@@ -35,3 +35,5 @@ nnoremap <silent> <F9> :NextColorScheme<CR>
 inoremap <silent> <S-F9> <C-O>:PrevColorScheme<CR>
 nnoremap <silent> <S-F9> :PrevColorScheme<CR>
 
+" Fugitive settings
+autocmd BufReadPost fugitive://* set bufhidden=delete
