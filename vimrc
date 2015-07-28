@@ -129,3 +129,13 @@ if filereadable('.vimrc.local')
     " If so, go ahead and load it.
     source .vimrc.local
 endif
+
+" Status line
+set statusline=%-.80f(%n)     " path to the file in the buffer, relative to current directory
+set statusline+=\ %{fugitive#statusline()}
+set statusline+=%h        " help file flag
+set statusline+=%w        " preview window flag
+set statusline+=%q        " quickfix list
+set statusline+=%=         " start right aligning
+set statusline+=[%l:%c/%L\ %p%%] " line:column/total lines (percentage though file in lines)
+set statusline+=%#todo#%m%r      " modified & read only flag
