@@ -53,7 +53,7 @@ if has('gui_running')
     " Color schme
     colorscheme apprentice
 else
-    colorscheme apprentice
+    colorscheme distinguished
 endif
 
 " Mappings
