@@ -41,7 +41,7 @@ set listchars=tab:▸\
 
 " GUI settings
 if has('gui_running')
-    :set guifont=Ubuntu\ Mono\ 10
+    :set guifont=Ubuntu\ Mono\ 12
     :set guioptions-=T  "remove toolbar
     :set guioptions-=m  "remove menu bar
     :set guioptions-=l
@@ -51,7 +51,7 @@ if has('gui_running')
     :set guioptions-=b
 
     " Color schme
-    colorscheme apprentice
+    colorscheme abra
 else
     colorscheme distinguished
 endif
