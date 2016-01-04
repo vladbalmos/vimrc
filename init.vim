@@ -1,1 +1,1 @@
-/home/vlad/.vimrc
+/home/vlad/.vim/vimrc
