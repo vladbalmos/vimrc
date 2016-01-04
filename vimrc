@@ -102,6 +102,8 @@ inoremap <C-l> <Right>
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 
+" Visual mode mappings
+vnoremap <C-c> "+y
 
 " Magic shit
 augroup BgHighlight
