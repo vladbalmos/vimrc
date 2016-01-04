@@ -65,6 +65,7 @@ nnoremap <F4> :buffers<CR>:buffer<Space>
 nnoremap <F3> :buffers<CR>:bd<Space>
 nnoremap <F5> :CtrlPClearCache<CR>
 nnoremap <F6> :!ctags -R .<CR>
+nnoremap <leader>mdp :!cat % \| markdown > /tmp/md-render.html && reload-firefox-tab.sh /tmp/md-render.html &<CR>
 
 " Splits navigation
 nnoremap <C-j> <C-w><C-j>
