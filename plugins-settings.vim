@@ -52,5 +52,10 @@ nmap <leader>a :TestSuite<CR>
 nmap <leader>l :TestLast<CR>
 nmap <leader>g :TestVisit<CR>
 
+" vimux settings
+" run current filename
+nmap <leader><leader>r :VimuxRunCommand("<C-r>%")<CR>
+nmap <leader><leader>rl :VimuxRunLastCommand<CR>
+
 " auto-pair
 let g:AutoPairsMapBS = 0
