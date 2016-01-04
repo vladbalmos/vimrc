@@ -28,6 +28,9 @@ let g:user_emmet_leader_key='<C-Z>'
 let g:ctrlp_max_files = 10000
 let g:ctrlp_max_depth = 100
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = {
+ \ 'dir': 'build'
+ \ }
 
 " Papercolor Theme
 "set t_Co=256
