@@ -72,7 +72,7 @@
 	url = https://github.com/Shutnik/jshint2.vim.git
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
-	url = https://github.com/janko-m/vim-test
+	url = https://github.com/vladbalmos/vim-test
 [submodule "bundle/vimux"]
 	path = bundle/vimux
 	url = https://github.com/benmills/vimux.git
