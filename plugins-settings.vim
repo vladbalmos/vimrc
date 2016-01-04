@@ -4,6 +4,10 @@ let g:colorscheme_switcher_define_mappings = 0
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" Leader key
+:let mapleader = ' '
+
+
 " NERDTree settings
 let NERDTreeShowBookmarks=1
 let NERDTreeShowLineNumbers=1
@@ -29,14 +33,24 @@ let g:ctrlp_custom_ignore = {
  \ }
 
 " Papercolor Theme
-set t_Co=256
+"set t_Co=256
 "colorscheme PaperColor
 
 " Color switcher mappings
 inoremap <silent> <F9> <C-O>:NextColorScheme<CR>
 nnoremap <silent> <F9> :NextColorScheme<CR>
-inoremap <silent> <S-F9> <C-O>:PrevColorScheme<CR>
-nnoremap <silent> <S-F9> :PrevColorScheme<CR>
+inoremap <silent> <C-S-F9> <C-O>:PrevColorScheme<CR>
+nnoremap <silent> <C-S-F9> :PrevColorScheme<CR>
 
 " Fugitive settings
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
+" vim-test settings
+nmap <leader>t :TestNearest<CR>
+nmap <leader>T :TestFile<CR>
+nmap <leader>a :TestSuite<CR>
+nmap <leader>l :TestLast<CR>
+nmap <leader>g :TestVisit<CR>
+
+" auto-pair
+let g:AutoPairsMapBS = 0

@@ -1,4 +1,5 @@
-" LOad pathogen
+" The <leader> is defined in plugins-settings.vim
+" Load pathogen
 if filereadable($HOME . '/.vim/plugins-settings.vim')
     source $HOME/.vim/plugins-settings.vim
 endif
@@ -25,6 +26,8 @@ set expandtab
 set autoindent
 set tabstop=4
 set shiftwidth=4
+set shiftround
+set showmatch
 set nowrap
 set noswapfile
 set nobackup
@@ -35,9 +38,6 @@ set smartcase
 set scrolljump=5 " Minimal number of lines to scroll when the cursor gets off the screen.
 set scrolloff=3 " Minimal number of screen liones to keep above and below the cursor.
 set listchars=tab:▸\
-
-" Leader key
-:let mapleader = ' '
 
 " GUI settings
 if has('gui_running')
@@ -53,7 +53,8 @@ if has('gui_running')
     " Color schme
     colorscheme abra
 else
-    colorscheme distinguished
+    "colorscheme distinguished
+    colorscheme donbass
 endif
 
 " Mappings
@@ -66,6 +67,7 @@ nnoremap <F3> :buffers<CR>:bd<Space>
 nnoremap <F5> :CtrlPClearCache<CR>
 nnoremap <F6> :!ctags -R .<CR>
 nnoremap <leader>mdp :!cat % \| markdown > /tmp/md-render.html && reload-firefox-tab.sh /tmp/md-render.html &<CR>
+
 
 " Splits navigation
 nnoremap <C-j> <C-w><C-j>
@@ -93,12 +95,13 @@ inoremap <C-s> <Esc>:w<CR>:a
 inoremap <C-s> <Esc><C-s>
 inoremap jj <Esc>
 inoremap JJ <Esc>
-inoremap <Esc> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
 inoremap <C-CR> <Esc>:normal O<CR>:startinsert<CR>
+inoremap <C-u> <Esc>viw~ea
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+
 
 " Magic shit
 augroup BgHighlight
@@ -113,6 +116,15 @@ augroup RelativeNumber
     autocmd!
     autocmd WinEnter * set relativenumber
     autocmd WinLeave * set relativenumber!
+augroup END
+
+augroup PHPSettings
+    autocmd!
+    autocmd FileType php :iabbrev <buffer> pubfn public function ()<left><left>
+    autocmd FileType php :iabbrev <buffer> protfn protected function ()<left><left>
+    autocmd FileType php :iabbrev <buffer> privfn private function ()<left><left>
+    autocmd FileType php :noremap <leader><leader>l :!php -l %<CR>
+
 augroup END
 
 if filereadable($HOME . '/.vim/functions.vim')

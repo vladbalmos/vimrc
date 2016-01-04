@@ -5,4 +5,8 @@
     cd .vim
     ./setup.sh
     
+### Adding new plugins
+
+    cd $HOME/.vim
+    git submodule add [plugin url] bundle/[name-of-plugin]
 
