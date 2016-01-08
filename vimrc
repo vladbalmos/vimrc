@@ -8,6 +8,8 @@ endif
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
 set modeline
+" treat numbers as decimal
+set nrformats=
 
 if has("syntax")
   syntax on
@@ -106,13 +108,13 @@ inoremap <C-j> <Down>
 vnoremap <C-c> "+y
 
 " Magic shit
-augroup BgHighlight
-    autocmd!
-    autocmd WinEnter * set cul
-    " autocmd WinEnter * set cursorcolumn
-    autocmd WinLeave * set nocul
-    " autocmd WinLeave * set nocursorcolumn
-augroup END
+"augroup BgHighlight
+    "autocmd!
+    "autocmd WinEnter * set cul
+    "" autocmd WinEnter * set cursorcolumn
+    "autocmd WinLeave * set nocul
+    "" autocmd WinLeave * set nocursorcolumn
+"augroup END
 
 augroup RelativeNumber
     autocmd!
@@ -126,7 +128,6 @@ augroup PHPSettings
     autocmd FileType php :iabbrev <buffer> protfn protected function ()<left><left>
     autocmd FileType php :iabbrev <buffer> privfn private function ()<left><left>
     autocmd FileType php :noremap <leader><leader>l :!php -l %<CR>
-
 augroup END
 
 if filereadable($HOME . '/.vim/functions.vim')
