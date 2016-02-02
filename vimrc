@@ -54,7 +54,47 @@ if has('gui_running')
     colorscheme abra
 else
     "colorscheme distinguished
-    colorscheme donbass
+    "colorscheme donbass
+    "colorscheme dual
+    "colorscheme black_angus
+    "colorscheme bubblegum
+    "colorscheme bvmenu
+    "colorscheme candyman
+    "colorscheme darkburn
+    "colorscheme darkblack
+    "colorscheme clue
+    "colorscheme desert256
+    "colorscheme desert256v2
+    "colorscheme desertEx
+    "colorscheme devbox-dark-256
+    "colorscheme distinguished
+    "colorscheme donbass
+    "colorscheme flatlandia
+    "colorscheme fu
+    "colorscheme gruvbox
+    "colorscheme harlequin
+    "colorscheme hemisu
+    "colorscheme herald
+    "colorscheme hybrid
+    "colorscheme iceberg
+    "colorscheme inkpot
+    "colorscheme jelleybeans
+    "colorscheme kellys
+    colorscheme kolor
+    "colorscheme lilypink
+    "colorscheme lizard256
+    "colorscheme lucius
+    "colorscheme mac_classic
+    "colorscheme mopkai
+    "colorscheme neverland
+    "colorscheme neverland-darker
+    "colorscheme obsidian
+    "colorscheme pencil
+    "colorscheme railscasts
+    "colorscheme wombat256
+    "colorscheme wombat256mod
+    "colorscheme muon
+    "colorscheme babymate256
 endif
 
 " Mappings
