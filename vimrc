@@ -8,6 +8,8 @@ endif
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
 set modeline
+" treat numbers as decimal
+set nrformats=
 
 if has("syntax")
   syntax on
@@ -51,7 +53,7 @@ if has('gui_running')
     :set guioptions-=b
 
     " Color schme
-    colorscheme abra
+    colorscheme apprentice
 else
     "colorscheme distinguished
     "colorscheme donbass
@@ -106,6 +108,7 @@ nnoremap <F4> :buffers<CR>:buffer<Space>
 nnoremap <F3> :buffers<CR>:bd<Space>
 nnoremap <F5> :CtrlPClearCache<CR>
 nnoremap <F6> :!ctags -R .<CR>
+nnoremap <leader>mdp :!cat % \| markdown > /tmp/md-render.html && reload-firefox-tab.sh /tmp/md-render.html &<CR>
 
 
 " Splits navigation
@@ -141,15 +144,17 @@ inoremap <C-l> <Right>
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 
+" Visual mode mappings
+vnoremap <C-c> "+y
 
 " Magic shit
-augroup BgHighlight
-    autocmd!
-    autocmd WinEnter * set cul
-    " autocmd WinEnter * set cursorcolumn
-    autocmd WinLeave * set nocul
-    " autocmd WinLeave * set nocursorcolumn
-augroup END
+"augroup BgHighlight
+    "autocmd!
+    "autocmd WinEnter * set cul
+    "" autocmd WinEnter * set cursorcolumn
+    "autocmd WinLeave * set nocul
+    "" autocmd WinLeave * set nocursorcolumn
+"augroup END
 
 augroup RelativeNumber
     autocmd!
@@ -163,7 +168,6 @@ augroup PHPSettings
     autocmd FileType php :iabbrev <buffer> protfn protected function ()<left><left>
     autocmd FileType php :iabbrev <buffer> privfn private function ()<left><left>
     autocmd FileType php :noremap <leader><leader>l :!php -l %<CR>
-
 augroup END
 
 if filereadable($HOME . '/.vim/functions.vim')

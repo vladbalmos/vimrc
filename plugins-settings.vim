@@ -28,6 +28,9 @@ let g:user_emmet_leader_key='<C-Z>'
 let g:ctrlp_max_files = 10000
 let g:ctrlp_max_depth = 100
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = {
+ \ 'dir': 'build'
+ \ }
 
 " Papercolor Theme
 "set t_Co=256
@@ -48,6 +51,11 @@ nmap <leader>T :TestFile<CR>
 nmap <leader>a :TestSuite<CR>
 nmap <leader>l :TestLast<CR>
 nmap <leader>g :TestVisit<CR>
+
+" vimux settings
+" run current filename
+nmap <leader><leader>r :VimuxRunCommand("<C-r>%")<CR>
+nmap <leader><leader>rl :VimuxRunLastCommand<CR>
 
 " auto-pair
 let g:AutoPairsMapBS = 0
