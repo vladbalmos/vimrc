@@ -59,3 +59,6 @@ nmap <leader><leader>rl :VimuxRunLastCommand<CR>
 
 " auto-pair
 let g:AutoPairsMapBS = 0
+
+" Neomake
+let g:neomake_php_enabled_makers = ['php']

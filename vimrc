@@ -172,6 +172,7 @@ augroup PHPSettings
     autocmd FileType php :iabbrev <buffer> protfn protected function ()<left><left>
     autocmd FileType php :iabbrev <buffer> privfn private function ()<left><left>
     autocmd FileType php :noremap <leader><leader>l :!php -l %<CR>
+    autocmd BufWritePost *.php Neomake
 augroup END
 
 if filereadable($HOME . '/.vim/functions.vim')
