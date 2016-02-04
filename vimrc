@@ -11,6 +11,10 @@ set modeline
 " treat numbers as decimal
 set nrformats=
 
+if &listchars ==# 'eol:$'
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+
 if has("syntax")
   syntax on
 endif
@@ -78,11 +82,11 @@ else
     "colorscheme hemisu
     "colorscheme herald
     "colorscheme hybrid
-    "colorscheme iceberg
+    colorscheme iceberg
     "colorscheme inkpot
     "colorscheme jelleybeans
     "colorscheme kellys
-    colorscheme kolor
+    "colorscheme kolor
     "colorscheme lilypink
     "colorscheme lizard256
     "colorscheme lucius
