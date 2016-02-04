@@ -53,7 +53,7 @@
 [submodule "bundle/jshint.vim"]
     path = bundle/jshint.vim
     url = https://github.com/walm/jshint.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/vim-javascript-syntax"]
     path = bundle/vim-javascript-syntax
     url = https://github.com/jelera/vim-javascript-syntax.git
