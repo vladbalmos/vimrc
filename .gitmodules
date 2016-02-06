@@ -22,14 +22,6 @@
     path = bundle/tagbar
     url = https://github.com/majutsushi/tagbar.git
     ignore = all
-[submodule "bundle/vim-easymotion"]
-    path = bundle/vim-easymotion
-    url = https://github.com/Lokaltog/vim-easymotion.git
-    ignore = all
-[submodule "bundle/vim-colors-solarized"]
-    path = bundle/vim-colors-solarized
-    url = https://github.com/altercation/vim-colors-solarized.git
-    ignore = all
 [submodule "bundle/vdebug"]
     path = bundle/vdebug
     url = https://github.com/joonty/vdebug.git
@@ -45,10 +37,6 @@
 [submodule "bundle/vim-node"]
     path = bundle/vim-node
     url = https://github.com/moll/vim-node.git
-    ignore = all
-[submodule "bundle/tabular"]
-    path = bundle/tabular
-    url = https://github.com/godlygeek/tabular.git
     ignore = all
 [submodule "bundle/jshint.vim"]
     path = bundle/jshint.vim
@@ -69,10 +57,6 @@
 [submodule "bundle/vim-twig"]
     path = bundle/vim-twig
     url = https://github.com/evidens/vim-twig.git
-    ignore = all
-[submodule "bundle/papercolor-theme"]
-    path = bundle/papercolor-theme
-    url = https://github.com/NLKNguyen/papercolor-theme.git
     ignore = all
 [submodule "bundle/vim-colorscheme-switcher"]
     path = bundle/vim-colorscheme-switcher
