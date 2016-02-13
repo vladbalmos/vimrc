@@ -1,7 +1,6 @@
 #!/bin/bash
 
-git submodule update --init
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 CURRENT_PATH=$(pwd)
-ln -s $CURRENT_PATH/vimrc $HOME/.vimrc
-ln -s $CURRENT_PATH/vimrc init.vim
-echo -e "\033[0;31mDon't forget to run :Helptags\033[0m"
+ln -fs $CURRENT_PATH/vimrc $HOME/.vimrc
+ln -fs $CURRENT_PATH/vimrc init.vim
