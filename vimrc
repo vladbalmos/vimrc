@@ -1,11 +1,14 @@
-" The <leader> is defined in plugins-settings.vim
+" Leader key
+let mapleader = ' '
+
+set nocompatible	" Use Vim defaults instead of 100% vi compatibility
+
 " Load pathogen
 if filereadable($HOME . '/.vim/plugins-settings.vim')
     source $HOME/.vim/plugins-settings.vim
 endif
 
 " Global settings
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start	" more powerful backspacing
 set modeline
 " treat numbers as decimal

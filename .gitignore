@@ -2,3 +2,4 @@ work-settings.vim
 .netrwhist
 init.vim
 doc/tags
+bundle/
