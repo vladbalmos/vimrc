@@ -9,6 +9,7 @@ execute pathogen#infect()
 
 
 " NERDTree settings
+let NERDTreeQuitOnOpen=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeShowHidden=1
