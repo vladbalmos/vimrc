@@ -81,7 +81,9 @@ else
     "colorscheme muon
     "colorscheme babymate256
     colorscheme iceberg
+    set background=dark
 endif
+
 
 " Mappings
 source $HOME/.vim/mappings.vim

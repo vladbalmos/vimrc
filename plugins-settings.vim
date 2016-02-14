@@ -64,7 +64,8 @@ nmap <leader>g :TestVisit<CR>
 
 " vimux settings
 " run current filename
-nmap <leader><leader>r :VimuxRunCommand("<C-r>%")<CR>
+nmap <leader><leader>r :VBVimuxRunCommand<CR>
+nmap <leader><leader>rp :VBVimuxCommandPrompt<CR>
 nmap <leader><leader>rl :VimuxRunLastCommand<CR>
 
 " auto-pair
