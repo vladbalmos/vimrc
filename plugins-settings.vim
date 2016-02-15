@@ -23,7 +23,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer=1
-noremap <F7> :NERDTreeToggle<CR>:wincmd w<CR>
+noremap <F7> :NERDTreeToggle<CR>:wincmd t<CR>
 
 " Tagbar
 noremap <F8> :TagbarToggle<CR>
@@ -39,20 +39,13 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
 let g:ctrlp_max_files = 5000
 let g:ctrlp_max_depth = 10
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_default_input = 1
+let g:ctrlp_match_current_file = 1
 let g:ctrlp_custom_ignore = {
  \ 'dir': '\v[\/]\.(git|hg|svn)$',
  \ 'file' : '*.*.orig'
  \ }
-
-" Papercolor Theme
-"set t_Co=256
-"colorscheme PaperColor
-
-" Color switcher mappings
-inoremap <silent> <F9> <C-O>:NextColorScheme<CR>
-nnoremap <silent> <F9> :NextColorScheme<CR>
-inoremap <silent> <C-S-F9> <C-O>:PrevColorScheme<CR>
-nnoremap <silent> <C-S-F9> :PrevColorScheme<CR>
+let g:ctrlp_extensions = ['tag', 'buffertag']
 
 " Fugitive settings
 autocmd BufReadPost fugitive://* set bufhidden=delete
