@@ -3,3 +3,4 @@ work-settings.vim
 init.vim
 doc/tags
 bundle/
+tags

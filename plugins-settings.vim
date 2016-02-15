@@ -35,11 +35,13 @@ let g:tagbar_show_linenumbers=2
 let g:user_emmet_leader_key='<C-Z>'
 
 " CtrlP
-let g:ctrlp_max_files = 10000
-let g:ctrlp_max_depth = 100
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
+let g:ctrlp_max_files = 5000
+let g:ctrlp_max_depth = 10
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
- \ 'dir': 'build'
+ \ 'dir': '\v[\/]\.(git|hg|svn)$',
+ \ 'file' : '*.*.orig'
  \ }
 
 " Papercolor Theme
