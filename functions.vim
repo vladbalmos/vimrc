@@ -68,7 +68,11 @@ if os.path.isfile(filename):
             if os.path.isdir(target_dir) is False:
                 os.makedirs(target_dir)
 
-            shutil.copy2(source, target)
+            try:
+                shutil.copy2(source, target)
+            except Exception, e:
+                print "Caught exception while copying file: " + str(e)
+
     else:
         print "Config file not present for sync operations"
 
