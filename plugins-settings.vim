@@ -68,3 +68,4 @@ let g:AutoPairsMapBS = 0
 
 " Neomake
 let g:neomake_php_enabled_makers = ['php']
+let g:neomake_open_list = 2

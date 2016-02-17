@@ -1,3 +1,6 @@
+" Commands
+command! VBGenTags :NeomakeSh ctags -R 2>&1 > /dev/null
+
 " Normal mode mappings
 nnoremap <C-s> :w<CR>
 nnoremap <F4> :buffers<CR>:buffer<Space>
