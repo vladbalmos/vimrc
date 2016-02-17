@@ -11,8 +11,8 @@ do
     fi
 done 2>&1 > /dev/null
 
-if [ "$anws" = 'y' ]; then
-    touch disable-ycm-plugin.flag
+if [ "$answ" = 'y' ]; then
+    touch $HOME/.vim/disable-ycm-plugin.flag
 fi
 
 vim +PluginInstall +qall

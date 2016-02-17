@@ -21,7 +21,7 @@ Plugin 'ctrlpvim/ctrlp.vim.git'
 Plugin 'xolox/vim-colorscheme-switcher.git'
 Plugin 'ervandew/supertab'
 
-if !filereadable($HOME . '/.vim/disable-ycm-plugin.vim')
+if !filereadable($HOME . '/.vim/disable-ycm-plugin.flag')
     Plugin 'Valloric/YouCompleteMe'
 endif
 
