@@ -105,6 +105,11 @@ augroup PHPSettings
     autocmd BufWritePost *.php Neomake
 augroup END
 
+augroup RubySettings
+    autocmd!
+    autocmd BufWritePost *.rb Neomake
+augroup END
+
 " Status line
 set statusline=%-.80f(%n)     " path to the file in the buffer, relative to current directory
 set statusline+=\ %{fugitive#statusline()}
