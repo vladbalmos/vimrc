@@ -39,8 +39,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
 let g:ctrlp_max_files = 5000
 let g:ctrlp_max_depth = 10
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_default_input = 1
-let g:ctrlp_match_current_file = 0
+let g:ctrlp_default_input = 0
+let g:ctrlp_match_current_file = 1
 let g:ctrlp_custom_ignore = {
  \ 'dir': '\v[\/]\.(git|hg|svn)$',
  \ 'file' : '*.*.orig'
