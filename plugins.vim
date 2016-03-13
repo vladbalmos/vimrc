@@ -20,11 +20,6 @@ Plugin 'benekastah/neomake.git'
 Plugin 'ctrlpvim/ctrlp.vim.git'
 Plugin 'xolox/vim-colorscheme-switcher.git'
 Plugin 'ervandew/supertab'
-
-if !filereadable($HOME . '/.vim/disable-ycm-plugin.flag')
-    Plugin 'Valloric/YouCompleteMe'
-endif
-
 Plugin 'joonty/vdebug.git'
 Plugin 'jelera/vim-javascript-syntax.git'
 Plugin 'stephpy/vim-yaml.git'
