@@ -96,9 +96,14 @@ if filereadable($HOME . '/.vim/work-settings.vim')
     source $HOME/.vim/work-settings.vim
 endif
 
+if filereadable($HOME . '/.vim/home-settings.vim')
+    source $HOME/.vim/home-settings.vim
+endif
+
 if filereadable('.vimrc.local')
     source .vimrc.local
 endif
+
 
 augroup PHPSettings
     autocmd!

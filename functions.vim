@@ -59,14 +59,19 @@ if os.path.isfile(filename):
         defined_target = config.get('main', 'target')
 
         if defined_source in filename:
-            relative_path = filename.replace(defined_source, '')
+            relative_path = filename.replace(defined_source, '')[1:]
             source = filename
             target = os.path.join(defined_target, relative_path)
 
             target_dir = os.path.dirname(target)
 
             if os.path.isdir(target_dir) is False:
-                os.makedirs(target_dir)
+                try:
+                    os.makedirs(target_dir)
+                except Exception, e:
+                    print "Caught exception: " + str(e)
+                    print relative_path
+
 
             try:
                 shutil.copy2(source, target)

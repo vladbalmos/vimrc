@@ -18,7 +18,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " NERDTree settings
-let NERDTreeQuitOnOpen=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeShowHidden=1
