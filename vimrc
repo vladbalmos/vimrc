@@ -41,7 +41,6 @@ if has('gui_running')
     source $HOME/.vim/gui-settings.vim
 else
     "colorscheme distinguished
-    "colorscheme donbass
     "colorscheme dual
     "colorscheme black_angus
     "colorscheme bubblegum
@@ -53,9 +52,9 @@ else
     "colorscheme desert256
     "colorscheme desert256v2
     "colorscheme desertEx
-    "colorscheme devbox-dark-256
+    colorscheme devbox-dark-256
     "colorscheme distinguished
-    "colorscheme donbass
+    "colorscheme donbass "ligh scheme
     "colorscheme flatlandia
     "colorscheme fu
     "colorscheme gruvbox
@@ -81,7 +80,7 @@ else
     "colorscheme wombat256mod
     "colorscheme muon
     "colorscheme babymate256
-    colorscheme iceberg
+    "colorscheme iceberg
 endif
 
 
