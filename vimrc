@@ -34,6 +34,8 @@ set ignorecase
 set smartcase
 set scrolljump=5 " Minimal number of lines to scroll when the cursor gets off the screen.
 set scrolloff=3 " Minimal number of screen liones to keep above and below the cursor.
+set splitbelow
+set splitright
 
 " GUI settings
 set background=dark
@@ -81,7 +83,7 @@ else
     "colorscheme wombat256mod
     "colorscheme muon
     "colorscheme babymate256
-    colorscheme iceberg
+    colorscheme iceberg " dark
 endif
 
 
