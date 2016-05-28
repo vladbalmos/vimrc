@@ -34,8 +34,6 @@ set ignorecase
 set smartcase
 set scrolljump=5 " Minimal number of lines to scroll when the cursor gets off the screen.
 set scrolloff=3 " Minimal number of screen liones to keep above and below the cursor.
-set splitbelow
-set splitright
 
 " GUI settings
 set background=dark
@@ -57,7 +55,7 @@ else
     "colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
-    "colorscheme donbass
+    "colorscheme donbass "ligh scheme
     "colorscheme flatlandia
     "colorscheme fu
     "colorscheme gruvbox
