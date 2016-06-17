@@ -55,7 +55,7 @@ else
     "colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
-    "colorscheme donbass "ligh scheme
+    colorscheme donbass "ligh scheme
     "colorscheme flatlandia
     "colorscheme fu
     "colorscheme gruvbox
@@ -81,7 +81,7 @@ else
     "colorscheme wombat256mod
     "colorscheme muon
     "colorscheme babymate256
-    colorscheme iceberg " dark
+    "colorscheme iceberg " dark
 endif
 
 
@@ -98,6 +98,10 @@ endif
 
 if filereadable($HOME . '/.vim/home-settings.vim')
     source $HOME/.vim/home-settings.vim
+endif
+
+if filereadable($HOME . '/.vim/language-settings.vim')
+    source $HOME/.vim/language-settings.vim
 endif
 
 if filereadable('.vimrc.local')
