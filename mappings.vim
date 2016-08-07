@@ -24,7 +24,6 @@ nnoremap <leader>wk :resize -10<CR>
 nnoremap <C-w>o :tabedit %<CR>
 nnoremap <C-w>d :tabclose<CR>
 
-
 " All modes mappings
 noremap - ddp
 noremap _ ddkP
@@ -40,3 +39,6 @@ inoremap <C-j> <Down>
 
 " Visual mode mappings
 vnoremap <C-c> "+y
+
+" Terminal mode mappings
+tnoremap jj <C-\><C-n>
