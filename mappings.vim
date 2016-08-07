@@ -40,5 +40,7 @@ inoremap <C-j> <Down>
 " Visual mode mappings
 vnoremap <C-c> "+y
 
-" Terminal mode mappings
-tnoremap jj <C-\><C-n>
+if has('nvim')
+    " Terminal mode mappings
+    tnoremap jj <C-\><C-n>
+endif
