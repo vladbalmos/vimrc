@@ -67,5 +67,6 @@ let g:AutoPairsMapBS = 0
 
 " Neomake
 let g:neomake_php_enabled_makers = ['php']
+let g:neomake_javascript_enabled_makers = ['jscs']
 let g:neomake_ruby_enabled_makers = ['mri']
 let g:neomake_open_list = 2

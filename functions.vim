@@ -2,7 +2,9 @@ command! VBVimuxRunCommand :call VBVimuxRunCommand()
 command! VBVimuxCommandPrompt :call VBVimuxCommandPrompt()
 
 function! VBVimuxCommandPrompt()
-    let g:vb_vimux_command = input('VimuxCommand: ', '', 'file')
+    call inputsave()
+    let g:vb_vimux_command = input('VimuxCommand: ', g:vb_vimux_command, 'file')
+    call inputrestore()
 endfunction
 
 function! VBVimuxIsCurrentBufferExecutable()

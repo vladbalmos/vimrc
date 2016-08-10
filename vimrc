@@ -39,7 +39,9 @@ set scrolloff=3 " Minimal number of screen liones to keep above and below the cu
 set background=dark
 if has('gui_running')
     source $HOME/.vim/gui-settings.vim
+    set mouse=a
 else
+    set mouse=
     "colorscheme distinguished
     "colorscheme donbass
     "colorscheme dual
@@ -107,17 +109,6 @@ endif
 if filereadable('.vimrc.local')
     source .vimrc.local
 endif
-
-
-augroup PHPSettings
-    autocmd!
-    autocmd BufWritePost *.php Neomake
-augroup END
-
-augroup RubySettings
-    autocmd!
-    autocmd BufWritePost *.rb Neomake
-augroup END
 
 " Status line
 set statusline=%-.80f(%n)     " path to the file in the buffer, relative to current directory
