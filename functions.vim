@@ -3,7 +3,12 @@ command! VBVimuxCommandPrompt :call VBVimuxCommandPrompt()
 
 function! VBVimuxCommandPrompt()
     call inputsave()
-    let g:vb_vimux_command = input('VimuxCommand: ', g:vb_vimux_command, 'file')
+    if !exists('g:vb_vimux_command')
+        let s:default_command = ''
+    else
+        let s:default_command = g:vb_vimux_command
+    endif
+    let g:vb_vimux_command = input('VimuxCommand: ', s:default_command, 'file')
     call inputrestore()
 endfunction
 
