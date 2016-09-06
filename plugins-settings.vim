@@ -35,8 +35,8 @@ let g:user_emmet_leader_key='<C-Z>'
 
 " CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
-let g:ctrlp_max_files = 5000
-let g:ctrlp_max_depth = 10
+let g:ctrlp_max_files = 10000
+let g:ctrlp_max_depth = 20
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_default_input = 0
 let g:ctrlp_match_current_file = 1
@@ -45,6 +45,7 @@ let g:ctrlp_custom_ignore = {
  \ 'file' : '*.*.orig'
  \ }
 let g:ctrlp_extensions = ['tag', 'buffertag']
+let g:ctrlp_switch_buffer = 'et'
 
 " Fugitive settings
 autocmd BufReadPost fugitive://* set bufhidden=delete
