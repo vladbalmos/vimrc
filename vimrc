@@ -53,11 +53,11 @@ else
     "colorscheme darkblack
     "colorscheme clue
     "colorscheme desert256
-    "colorscheme desert256v2
+    colorscheme desert256v2
     "colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
-    colorscheme donbass "ligh scheme
+    "colorscheme donbass "ligh scheme
     "colorscheme flatlandia
     "colorscheme fu
     "colorscheme gruvbox

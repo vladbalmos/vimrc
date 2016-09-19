@@ -8,4 +8,4 @@ set guioptions-=R
 set guioptions-=b
 
 " Color schme
-colorscheme apprentice
+colorscheme desert
