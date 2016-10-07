@@ -1,3 +1,4 @@
+" Mappings related to plugins are defined in the plugins-settings.vim file
 " Commands
 command! VBGenTags :NeomakeSh ctags -R 2>&1 > /dev/null
 

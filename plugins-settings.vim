@@ -46,6 +46,8 @@ let g:ctrlp_custom_ignore = {
  \ }
 let g:ctrlp_extensions = ['tag', 'buffertag']
 let g:ctrlp_switch_buffer = 'et'
+let g:ctrlp_working_path_mode = 0
+nmap <F9> :CtrlPClearCache<CR>
 
 " Fugitive settings
 autocmd BufReadPost fugitive://* set bufhidden=delete
