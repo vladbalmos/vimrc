@@ -23,6 +23,7 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer=1
 noremap <F7> :NERDTreeToggle<CR>:wincmd t<CR>
+noremap <leader>f :NERDTreeFind<CR>:wincmd t<CR>
 
 " Tagbar
 noremap <F8> :TagbarToggle<CR>
