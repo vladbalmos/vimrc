@@ -53,7 +53,7 @@ else
     "colorscheme darkblack
     "colorscheme clue
     "colorscheme desert256
-    colorscheme desert256v2
+    colorscheme desert256v2 "dark scheme
     "colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
