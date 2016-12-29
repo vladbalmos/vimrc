@@ -36,7 +36,7 @@ set scrolljump=5 " Minimal number of lines to scroll when the cursor gets off th
 set scrolloff=3 " Minimal number of screen liones to keep above and below the cursor.
 
 " GUI settings
-set background=dark
+"set background=dark
 if has('gui_running')
     source $HOME/.vim/gui-settings.vim
     set mouse=a
