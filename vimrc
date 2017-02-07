@@ -42,42 +42,37 @@ if has('gui_running')
     set mouse=a
 else
     set mouse=
+    set background=light
+    let g:solarized_termcolors=256
+    colorscheme solarized
     "colorscheme distinguished
-    "colorscheme donbass
     "colorscheme dual
     "colorscheme black_angus
-    "colorscheme bubblegum
-    "colorscheme bvmenu
-    "colorscheme candyman
-    "colorscheme darkburn
-    "colorscheme darkblack
+    "colorscheme bubblegum "light
+    "colorscheme candyman "really dark
     "colorscheme clue
     "colorscheme desert256
-    colorscheme desert256v2 "dark scheme
+    "colorscheme desert256v2 "dark scheme
     "colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
     "colorscheme donbass "ligh scheme
     "colorscheme flatlandia
     "colorscheme fu
-    "colorscheme gruvbox
-    "colorscheme harlequin
-    "colorscheme hemisu
+    "colorscheme hemisu "light
     "colorscheme herald
-    "colorscheme hybrid
+    "colorscheme hybrid "light
     "colorscheme inkpot
     "colorscheme jelleybeans
     "colorscheme kellys
     "colorscheme kolor
     "colorscheme lilypink
     "colorscheme lizard256
-    "colorscheme lucius
-    "colorscheme mac_classic
+    "colorscheme lucius "light
     "colorscheme mopkai
     "colorscheme neverland
     "colorscheme neverland-darker
     "colorscheme obsidian
-    "colorscheme pencil
     "colorscheme railscasts
     "colorscheme wombat256
     "colorscheme wombat256mod
