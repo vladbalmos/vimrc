@@ -8,6 +8,7 @@ nnoremap <F4> :buffers<CR>:buffer<Space>
 nnoremap <F3> :buffers<CR>:bd<Space>
 nnoremap <leader>mdp :!cat % \| markdown > /tmp/md-render.html && reload-firefox-tab.sh /tmp/md-render.html &<CR>
 nnoremap <leader><leader>c :let @" = expand("%")<CR>
+nnoremap <leader><leader>n :nohlsearch<CR>
 
 
 " Splits navigation
