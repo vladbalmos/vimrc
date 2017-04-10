@@ -30,6 +30,7 @@ noremap <F8> :TagbarToggle<CR>
 
 " Tagbar settings
 let g:tagbar_show_linenumbers=2
+let g:tagbar_autoclose=1
 
 " Emmet settings
 let g:user_emmet_leader_key='<C-Z>'
