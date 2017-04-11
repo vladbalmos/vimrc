@@ -44,7 +44,7 @@ else
     set mouse=
     set background=light
     let g:solarized_termcolors=256
-    colorscheme solarized
+    "colorscheme solarized
     "colorscheme distinguished
     "colorscheme dual
     "colorscheme black_angus
@@ -52,7 +52,7 @@ else
     "colorscheme candyman "really dark
     "colorscheme clue
     "colorscheme desert256
-    "colorscheme desert256v2 "dark scheme
+    colorscheme desert256v2 "dark scheme
     "colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
