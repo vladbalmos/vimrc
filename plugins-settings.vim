@@ -75,3 +75,6 @@ let g:neomake_php_enabled_makers = ['php']
 let g:neomake_javascript_enabled_makers = ['jscs']
 let g:neomake_ruby_enabled_makers = ['mri']
 let g:neomake_open_list = 2
+
+" Vdebug
+"let g:vdebug_options['path_maps'] = {"/srv/meeton/app": "/home/vlad/Development/www/meeton/v2/website-v2/site"}

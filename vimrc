@@ -1,5 +1,8 @@
 " Leader key
 let mapleader = ' '
+set background=dark
+set t_Co=256
+set term=screen-256color
 
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 
@@ -36,15 +39,15 @@ set scrolljump=5 " Minimal number of lines to scroll when the cursor gets off th
 set scrolloff=3 " Minimal number of screen liones to keep above and below the cursor.
 
 " GUI settings
-"set background=dark
 if has('gui_running')
     source $HOME/.vim/gui-settings.vim
     set mouse=a
 else
-    set mouse=
-    set background=light
-    let g:solarized_termcolors=256
-    colorscheme solarized
+    "set mouse=
+    "set background=light
+    "let g:solarized_termcolors=256
+    "let g:adventurous_termcolors=256
+    "colorscheme solarized
     "colorscheme distinguished
     "colorscheme dual
     "colorscheme black_angus
@@ -52,7 +55,8 @@ else
     "colorscheme candyman "really dark
     "colorscheme clue
     "colorscheme desert256
-    "colorscheme desert256v2 "dark scheme
+    colorscheme desert256v2 "dark scheme
+    "colorscheme adventurous "dark scheme
     "colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
