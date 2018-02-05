@@ -55,9 +55,9 @@ else
     "colorscheme candyman "really dark
     "colorscheme clue
     "colorscheme desert256
-    colorscheme desert256v2 "dark scheme
+    "colorscheme desert256v2 "dark scheme
     "colorscheme adventurous "dark scheme
-    "colorscheme desertEx
+    colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
     "colorscheme donbass "ligh scheme
