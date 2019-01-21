@@ -1,5 +1,3 @@
-let g:colorscheme_switcher_define_mappings = 0
-
 filetype off
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -32,34 +30,23 @@ noremap <F8> :TagbarToggle<CR>
 let g:tagbar_show_linenumbers=2
 let g:tagbar_autoclose=1
 
-" Emmet settings
-let g:user_emmet_leader_key='<C-Z>'
-
 " CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
 let g:ctrlp_max_files = 10000
-let g:ctrlp_max_depth = 20
+let g:ctrlp_max_depth = 50
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_default_input = 0
-let g:ctrlp_match_current_file = 1
+let g:ctrlp_match_current_file = 0
+let g:ctrlp_lazy_update = 100
 let g:ctrlp_custom_ignore = {
- \ 'dir': '\v[\/]\.(git|hg|svn)$',
+ \ 'dir': 'node_modules\|vendor\|git',
  \ 'file' : '*.*.orig'
  \ }
 let g:ctrlp_extensions = ['tag', 'buffertag']
 let g:ctrlp_switch_buffer = 'et'
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_clear_cache_on_exit = 1
 nmap <F9> :CtrlPClearCache<CR>
-
-" Fugitive settings
-autocmd BufReadPost fugitive://* set bufhidden=delete
-
-" vim-test settings
-nmap <leader>t :TestNearest<CR>
-nmap <leader>T :TestFile<CR>
-nmap <leader>a :TestSuite<CR>
-nmap <leader>l :TestLast<CR>
-nmap <leader>g :TestVisit<CR>
 
 " vimux settings
 " run current filename
@@ -69,12 +56,3 @@ nmap <leader><leader>rl :VimuxRunLastCommand<CR>
 
 " auto-pair
 let g:AutoPairsMapBS = 0
-
-" Neomake
-let g:neomake_php_enabled_makers = ['php']
-let g:neomake_javascript_enabled_makers = ['jscs']
-let g:neomake_ruby_enabled_makers = ['mri']
-let g:neomake_open_list = 2
-
-" Vdebug
-"let g:vdebug_options['path_maps'] = {"/srv/meeton/app": "/home/vlad/Development/www/meeton/v2/website-v2/site"}

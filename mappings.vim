@@ -1,12 +1,7 @@
-" Mappings related to plugins are defined in the plugins-settings.vim file
-" Commands
-command! VBGenTags :NeomakeSh ctags -R 2>&1 > /dev/null
-
 " Normal mode mappings
 nnoremap <C-s> :w<CR>
 nnoremap <F4> :buffers<CR>:buffer<Space>
 nnoremap <F3> :buffers<CR>:bd<Space>
-nnoremap <leader>mdp :!cat % \| markdown > /tmp/md-render.html && reload-firefox-tab.sh /tmp/md-render.html &<CR>
 nnoremap <leader><leader>c :let @" = expand("%")<CR>
 nnoremap <leader><leader>n :nohlsearch<CR>
 
@@ -23,10 +18,6 @@ nnoremap <leader>wl :vertical resize -10<CR>
 nnoremap <leader>wj :resize +10<CR>
 nnoremap <leader>wk :resize -10<CR>
 
-" Maximize / Restore split
-nnoremap <C-w>o :tabedit %<CR>
-nnoremap <C-w>d :tabclose<CR>
-
 " All modes mappings
 noremap - ddp
 noremap _ ddkP
@@ -42,8 +33,3 @@ inoremap <C-j> <Down>
 
 " Visual mode mappings
 vnoremap <C-c> "+y
-
-if has('nvim')
-    " Terminal mode mappings
-    tnoremap jj <C-\><C-n>
-endif
