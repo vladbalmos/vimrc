@@ -9,4 +9,4 @@ set guioptions-=b
 
 " Color schme
 "colorscheme solarized "light scheme
-colorscheme desert256v2 "dark scheme
+"colorscheme desert256v2 "dark scheme

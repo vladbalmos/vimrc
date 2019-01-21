@@ -44,7 +44,7 @@ if has('gui_running')
     set mouse=a
 else
     "set mouse=
-    "set background=light
+    set background=light
     "let g:solarized_termcolors=256
     "let g:adventurous_termcolors=256
     "colorscheme solarized
