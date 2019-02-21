@@ -56,3 +56,6 @@ nmap <leader><leader>rl :VimuxRunLastCommand<CR>
 
 " auto-pair
 let g:AutoPairsMapBS = 0
+
+" vim-json
+let g:vim_json_syntax_conceal = 0
