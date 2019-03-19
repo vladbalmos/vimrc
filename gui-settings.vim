@@ -8,5 +8,6 @@ set guioptions-=R
 set guioptions-=b
 
 " Color schme
+colorscheme desertEx
 "colorscheme solarized "light scheme
 "colorscheme desert256v2 "dark scheme
