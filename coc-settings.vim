@@ -1,3 +1,8 @@
+" :CocInstall coc-phpls
+" :CocInstall coc-json
+" :CocInstall coc-tsserver
+" :CocInstall coc-html
+" :CocInstall coc-css
 " Give more space for displaying messages.
 set cmdheight=2
 
