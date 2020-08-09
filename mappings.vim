@@ -5,7 +5,6 @@ nnoremap <F3> :buffers<CR>:bd<Space>
 nnoremap <leader><leader>c :let @" = expand("%")<CR>
 nnoremap <leader><leader>n :nohlsearch<CR>
 
-
 " Splits navigation
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-h> <C-w><C-h>
