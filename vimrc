@@ -31,6 +31,7 @@ set hlsearch " Highlight search results
 set nowrap
 set noswapfile
 set nobackup
+set nowritebackup
 set exrc
 set secure
 set ignorecase
