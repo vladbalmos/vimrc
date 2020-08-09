@@ -59,3 +59,10 @@ let g:AutoPairsMapBS = 0
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
+
+" fzf
+if filereadable('/usr/share/doc/fzf/examples/fzf.vim')
+    source /usr/share/doc/fzf/examples/fzf.vim
+    noremap <C-p> :Files<CR>
+    noremap <leader><leader>b :Buffers<CR>
+endif

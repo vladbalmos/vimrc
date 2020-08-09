@@ -4,9 +4,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Filesystem related
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ctrlpvim/ctrlp.vim.git'
-Plugin 'rking/ag.vim.git'
-" TODO: install fzf
+Plugin 'junegunn/fzf.vim'
 
 " Editing
 Plugin 'preservim/nerdcommenter.git'
@@ -18,7 +16,6 @@ Plugin 'bronson/vim-trailing-whitespace' "highligh trailing space
 
 " Buffer & window management
 Plugin 'vim-scripts/ZoomWin' "toggle max window size: c-w o
-Plugin 'jeetsukumaran/vim-buffergator' "show opened buffer <leader>b
 
 " Intellisense
 Plugin 'majutsushi/tagbar.git'
@@ -26,10 +23,10 @@ Plugin 'majutsushi/tagbar.git'
 " Languages related
 Plugin 'elzr/vim-json'
 Plugin 'stephpy/vim-yaml.git'
+Plugin 'jwalton512/vim-blade.git'
 "Plugin 'mxw/vim-jsx'
 "Plugin 'moll/vim-node.git'
 "Plugin 'jelera/vim-javascript-syntax.git'
-"Plugin 'jwalton512/vim-blade.git'
 
 " Misc
 Plugin 'flazz/vim-colorschemes.git'
