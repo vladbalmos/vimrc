@@ -6,7 +6,7 @@ set term=screen-256color
 
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 
-" Load pathogen
+" Load vundle & configure plugins
 if filereadable($HOME . '/.vim/plugins-settings.vim')
     source $HOME/.vim/plugins-settings.vim
 endif
@@ -31,6 +31,7 @@ set hlsearch " Highlight search results
 set nowrap
 set noswapfile
 set nobackup
+set nowritebackup
 set exrc
 set secure
 set ignorecase
@@ -91,14 +92,6 @@ source $HOME/.vim/mappings.vim
 
 if filereadable($HOME . '/.vim/functions.vim')
     source $HOME/.vim/functions.vim
-endif
-
-if filereadable($HOME . '/.vim/work-settings.vim')
-    source $HOME/.vim/work-settings.vim
-endif
-
-if filereadable($HOME . '/.vim/home-settings.vim')
-    source $HOME/.vim/home-settings.vim
 endif
 
 if filereadable($HOME . '/.vim/language-settings.vim')
