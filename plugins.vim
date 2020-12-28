@@ -31,3 +31,4 @@ Plugin 'vwxyutarooo/nerdtree-devicons-syntax'
 Plugin 'tpope/vim-fugitive' "used in showing the current branch name
 Plugin 'benmills/vimux.git' "run commands in tmux
 Plugin 'editorconfig/editorconfig-vim.git' "run commands in tmux
+Plugin 'NLKNguyen/papercolor-theme'
