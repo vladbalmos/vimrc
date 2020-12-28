@@ -43,16 +43,10 @@ let g:AutoPairsMapBS = 0
 let g:vim_json_syntax_conceal = 0
 
 " fzf
-if filereadable('/usr/share/doc/fzf/examples/fzf.vim')
-    source /usr/share/doc/fzf/examples/fzf.vim
+if filereadable('/home/vlad/.fzf/plugin/fzf.vim')
+    source /home/vlad/.fzf/plugin/fzf.vim
     noremap <C-p> :Files<CR>
     noremap <leader><leader>b :Buffers<CR>
-else
-    if filereadable('/home/vlad/.fzf/plugin/fzf.vim')
-        source /home/vlad/.fzf/plugin/fzf.vim
-        noremap <C-p> :Files<CR>
-        noremap <leader><leader>b :Buffers<CR>
-    endif
 endif
 
 " coc

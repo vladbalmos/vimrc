@@ -17,6 +17,7 @@ Plugin 'vim-scripts/ZoomWin' "toggle max window size: c-w o
 
 " Intellisense
 Plugin 'neoclide/coc.nvim'
+" Instal coc plugins: coc-tsserver coc-phpls coc-python
 
 " Languages related
 Plugin 'elzr/vim-json'
