@@ -24,6 +24,7 @@ Plugin 'elzr/vim-json'
 Plugin 'stephpy/vim-yaml.git'
 Plugin 'jwalton512/vim-blade.git'
 Plugin 'jelera/vim-javascript-syntax.git'
+Plugin 'briancollins/vim-jst'
 
 " Misc
 Plugin 'flazz/vim-colorschemes.git'

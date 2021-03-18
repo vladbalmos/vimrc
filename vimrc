@@ -46,7 +46,7 @@ if has('gui_running')
 else
     "set mouse=
     set background=light
-    colorscheme PaperColor
+    "colorscheme PaperColor
     "let g:solarized_termcolors=256
     "let g:adventurous_termcolors=256
     "colorscheme solarized
@@ -59,7 +59,7 @@ else
     "colorscheme desert256
     "colorscheme desert256v2 "dark scheme
     "colorscheme adventurous "dark scheme
-    "colorscheme desertEx
+    colorscheme desertEx
     "colorscheme devbox-dark-256
     "colorscheme distinguished
     "colorscheme donbass "ligh scheme
