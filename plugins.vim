@@ -23,7 +23,9 @@ Plugin 'neoclide/coc.nvim'
 Plugin 'elzr/vim-json'
 Plugin 'stephpy/vim-yaml.git'
 Plugin 'jwalton512/vim-blade.git'
-Plugin 'jelera/vim-javascript-syntax.git'
+Plugin 'yuezk/vim-js'
+Plugin 'maxmellon/vim-jsx-pretty'
+
 
 " Misc
 Plugin 'flazz/vim-colorschemes.git'
