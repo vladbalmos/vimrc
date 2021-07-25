@@ -14,6 +14,7 @@ Plugin 'bronson/vim-trailing-whitespace' "highligh trailing space
 
 " Buffer & window management
 Plugin 'vim-scripts/ZoomWin' "toggle max window size: c-w o
+Plugin 'preservim/tagbar' "tagbar
 
 " Intellisense
 Plugin 'neoclide/coc.nvim'
