@@ -42,17 +42,5 @@ let g:AutoPairsMapBS = 0
 " vim-json
 let g:vim_json_syntax_conceal = 0
 
-" fzf
-if filereadable('/home/vlad/.fzf/plugin/fzf.vim')
-    source /home/vlad/.fzf/plugin/fzf.vim
-    noremap <C-p> :Files<CR>
-    noremap <leader><leader>b :Buffers<CR>
-endif
-
-" coc
-if filereadable($HOME . '/.vim/bundle/coc.nvim/package.json')
-    source $HOME/.vim/coc-settings.vim
-endif
-
 " editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
