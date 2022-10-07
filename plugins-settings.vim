@@ -50,9 +50,9 @@ if filereadable('/home/vlad/.fzf/plugin/fzf.vim')
 endif
 
 " coc
-if filereadable($HOME . '/.vim/bundle/coc.nvim/package.json')
-    source $HOME/.vim/coc-settings.vim
-endif
+"if filereadable($HOME . '/.vim/bundle/coc.nvim/package.json')
+    "source $HOME/.vim/coc-settings.vim
+"endif
 
 " editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']

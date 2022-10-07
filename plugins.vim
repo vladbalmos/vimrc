@@ -17,7 +17,7 @@ Plugin 'vim-scripts/ZoomWin' "toggle max window size: c-w o
 Plugin 'preservim/tagbar' "tagbar
 
 " Intellisense
-Plugin 'neoclide/coc.nvim'
+" Plugin 'neoclide/coc.nvim'
 " Instal coc plugins: coc-tsserver coc-phpls coc-python
 
 " Languages related
@@ -27,7 +27,7 @@ Plugin 'jwalton512/vim-blade.git'
 Plugin 'yuezk/vim-js'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'briancollins/vim-jst'
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 
 " Misc
 Plugin 'flazz/vim-colorschemes.git'
