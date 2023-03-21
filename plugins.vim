@@ -28,6 +28,7 @@ Plugin 'yuezk/vim-js'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'briancollins/vim-jst'
 Plugin 'fatih/vim-go'
+Plugin 'tomlion/vim-solidity'
 
 " Misc
 Plugin 'flazz/vim-colorschemes.git'
