@@ -2,7 +2,6 @@
 let mapleader = ' '
 set background=dark
 set t_Co=256
-set term=screen-256color
 
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 
@@ -105,7 +104,6 @@ endif
 
 " Status line
 set statusline=%-.80f(%n)     " path to the file in the buffer, relative to current directory
-set statusline+=\ %{fugitive#statusline()}
 set statusline+=%h        " help file flag
 set statusline+=%w        " preview window flag
 set statusline+=%q        " quickfix list
