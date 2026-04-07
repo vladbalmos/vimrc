@@ -49,13 +49,5 @@ if filereadable('/opt/homebrew/Cellar/fzf/0.67.0/plugin/fzf.vim')
     noremap <leader><leader>b :Buffers<CR>
 endif
 
-<<<<<<< HEAD
-=======
-" coc
-"if filereadable($HOME . '/.vim/bundle/coc.nvim/package.json')
-    "source $HOME/.vim/coc-settings.vim
-"endif
-
->>>>>>> 5d3f70bd96ae0a7f5285250cb17e8572962420fb
 " editorconfig
-let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+let g:EditorConfig_exclude_patterns = ['scp://.*']
