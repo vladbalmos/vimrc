@@ -2,7 +2,7 @@
 let mapleader = ' '
 set background=dark
 set t_Co=256
-set term=screen-256color
+"set term=screen-256color
 
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 
