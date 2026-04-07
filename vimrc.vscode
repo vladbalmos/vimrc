@@ -34,6 +34,7 @@ nnoremap <F4> :buffers<CR>:buffer<Space>
 nnoremap <F3> :buffers<CR>:bd<Space>
 nnoremap <leader><leader>c :let @" = expand("%")<CR>
 nnoremap <leader><leader>n :nohlsearch<CR>
+nnoremap Y "+yy<CR>
 
 
 " Splits navigation
@@ -55,7 +56,7 @@ noremap _ ddkP
 " Insert mode mappings
 inoremap jj <Esc>
 inoremap JJ <Esc>
-inoremap <C-u> <Esc>viw~ea
+inoremap <C-u> <Esc>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-k> <Up>
