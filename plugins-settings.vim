@@ -43,15 +43,10 @@ let g:AutoPairsMapBS = 0
 let g:vim_json_syntax_conceal = 0
 
 " fzf
-if filereadable('/home/vlad/.fzf/plugin/fzf.vim')
-    source /home/vlad/.fzf/plugin/fzf.vim
+if filereadable('/opt/homebrew/Cellar/fzf/0.67.0/plugin/fzf.vim')
+    source /opt/homebrew/Cellar/fzf/0.67.0/plugin/fzf.vim
     noremap <C-p> :Files<CR>
     noremap <leader><leader>b :Buffers<CR>
-endif
-
-" coc
-if filereadable($HOME . '/.vim/bundle/coc.nvim/package.json')
-    source $HOME/.vim/coc-settings.vim
 endif
 
 " editorconfig
