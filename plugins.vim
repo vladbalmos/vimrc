@@ -31,3 +31,5 @@ Plugin 'benmills/vimux.git' "run commands in tmux
 Plugin 'editorconfig/editorconfig-vim.git' "run commands in tmux
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'bfrg/vim-c-cpp-modern'
+Plugin 'github/copilot.vim'
+Plugin 'prabirshrestha/vim-lsp'
