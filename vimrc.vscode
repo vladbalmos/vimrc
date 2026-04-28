@@ -27,6 +27,13 @@ set ignorecase
 set smartcase
 set scrolljump=5 " Minimal number of lines to scroll when the cursor gets off the screen.
 set scrolloff=3 " Minimal number of screen liones to keep above and below the cursor.
+packadd! matchit
+filetype plugin indent on
+autocmd BufRead,BufNewFile *.ejs set filetype=html
+augroup vscode_ejs_html_filetype
+  autocmd!
+  autocmd BufRead,BufNewFile,BufEnter *.ejs setlocal filetype=html
+augroup END
 
 " Normal mode mappings
 nnoremap <C-s> :w<CR>
